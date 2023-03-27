@@ -1,0 +1,40 @@
+﻿<Window x:Class="dz3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dz3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/> 
+        </Grid.RowDefinitions>
+        <TextBox  x:Name="Notepad" Grid.Row="1"
+                  AcceptsReturn="True" AcceptsTab="True"
+                  AutoWordSelection="True" CaretBrush="Black"
+                  SelectionBrush="Aqua" SelectionOpacity="0.4">
+           
+        </TextBox>
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="3" x:Name="Open" 
+                    Click="Open_Click">Open</Button>
+            <Button Margin="3" x:Name="Save"
+                    Click="Save_Click" >Save</Button>
+            <Button Margin="3" x:Name="New"
+                    Click="New_Click" >New</Button>
+            <Button Margin="3" x:Name="Edit"
+                    Click="Edit_Click" >Edit</Button>
+            <Button Margin="3" x:Name="SelectAll"
+                    Click="SelectAll_Click" >Select All</Button>
+            <Button Margin="3" x:Name="Paste"
+                    Click="Paste_Click" >Paste</Button>
+            <Button Margin="3" x:Name="Cut"
+                    Click="Cut_Click" >Cut</Button>
+            <Button Margin="3" x:Name="Copy"
+                    Click="Copy_Click" >Copy</Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>

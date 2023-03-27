@@ -1,0 +1,35 @@
+﻿<Window x:Class="dz3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dz3"
+        mc:Ignorable="d"
+        Title="Window1" Height="304.8" Width="249.2">
+    <StackPanel VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="3">
+        <Grid Margin="3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <CheckBox x:Name="WrapTextCheckbox" 
+                      Content="Wrap Text" 
+                      Checked="WrapTextCheckbox_Checked"
+                      Unchecked="WrapTextCheckbox_Unchecked"
+                      />
+            <StackPanel Grid.Row="1" Orientation="Vertical" Margin="3">
+                <Label>Size Font</Label>
+                <RadioButton Margin="3" x:Name="VerySmall" Checked="VerySmall_Checked" >Very small</RadioButton>
+                <RadioButton Margin="3" x:Name="Small" Checked="Small_Checked" >Small</RadioButton>
+                <RadioButton Margin="3" x:Name="Normal" Checked="Normal_Checked">Normal</RadioButton>
+                <RadioButton Margin="3" x:Name="Big" Checked="Big_Checked" >Big</RadioButton>
+                <RadioButton Margin="3" x:Name="VeryBig" Checked="VeryBig_Checked" > Very Big</RadioButton>
+
+            </StackPanel>
+        </Grid>
+        <Button x:Name="Ok" Margin="10" Click="Ok_Click"
+                >Ok</Button>
+    </StackPanel>
+</Window>
